@@ -1,61 +1,79 @@
-# Alaiza Nicole Caranto — Portfolio
+# Alaiza Nicole Caranto | Portfolio
 
-Personal portfolio website featuring my projects, technical skills, and experience as an Information Technology student interested in web development and network administration.
+Personal portfolio showcasing my projects, technical skills, and experience as an Information Technology student focused on web development and network administration.
 
-## 🌐 Live Portfolio
+## 🌐 Portfolio Links
 
-_Portfolio link will be added after deployment._
-
-==========
-
-## 👩‍💻 About Me
-
-I am an Information Technology student at the Polytechnic University of the Philippines. I enjoy building practical web applications and exploring network administration, including LAN setup, IP addressing, and Cisco Packet Tracer.
+| Platform | Link |
+| --- | --- |
+| Vercel deployment | [alaizanicole-portfolio.vercel.app](https://alaizanicole-portfolio.vercel.app/) |
+| GitHub Pages deployment | [alaizanicolecaranto.github.io/portfolio](https://alaizanicolecaranto.github.io/portfolio/) |
+| Source code | [github.com/AlaizaNicoleCaranto](https://github.com/AlaizaNicoleCaranto) |
 
 ==========
 
-## ✨ Features
+## 👩‍💻 About
 
-- Responsive layout for desktop and mobile
-- Animated, categorized technology stack
-- Featured work and filterable project cards
-- Interactive Network Mini-Lab and a linked mobile UI/UX prototype
-- Downloadable one-page resume
-- Links to project repositories and contact channels
-- Scroll progress indicator and subtle reveal animations
-- Reduced-motion support
+I am an Information Technology student at the Polytechnic University of the Philippines. I build practical web applications and explore network administration, including LAN setup, IP addressing, and Cisco Packet Tracer. I currently serve as President of the BSIT Alliance.
 
 ==========
 
-## 🧰 Built With
+## ✨ Highlights
 
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap 5
-- Devicon
-- Google Fonts
+- Responsive portfolio with animated, categorized technology logos
+- Featured projects and filterable project cards
+- Interactive Network Mini-Lab demonstrating an example packet route
+- Figma mobile prototype for the IT Alliance Hub
+- Downloadable, one-page resume
+- Accessible motion effects with reduced-motion support
+
+==========
+
+## 🧰 Technologies
+
+- **Languages:** C, C#, COBOL, Python, Java, JavaScript, PHP, Visual Basic
+- **Frontend:** HTML5, CSS3, Bootstrap, React, Vue, Blade
+- **Backend:** Flask, Spring Boot, Laravel, ASP.NET, Tkinter, REST API
+- **Databases:** PostgreSQL, MySQL, SQL, Microsoft Access
+- **Networking:** Cisco Packet Tracer, LAN Setup, IP Addressing
+- **Tools:** Git, Postman, Swagger, Thunder Client, Vercel, Figma, Spring Initializr, JDK, Maven, Node.js
+
+==========
+
+## 🗂️ Selected Projects
+
+- **IT Alliance Hub** — Figma mobile prototype for BSIT Alliance announcements, events, and programming resources. [View prototype](https://www.figma.com/design/KcZsWgjLrHU4pstAIClKdy/Mobile-IT-ALLIANCE-HUB?node-id=0-1&t=xmDZg9OWq2ieqdwp-1)
+- **Tax Computational Tool** — Web application for calculating tax options and reviewing saved computations.
+- **Generation 1 Pokedex** — Full-stack Pokédex for exploring the original 151 Kanto Pokémon.
+- **EduRoom** — Flask-based room scheduling and reservation system.
+- **MochiVerse** — Browser-based mochi storefront prototype.
+- **Programming Projects** — Programming exercises and applications in C, C#/.NET, and COBOL.
+
+==========
+
+## 📄 Resume
+
+[Download the one-page resume (PDF)](./assets/Alaiza-Nicole-Caranto-Resume.pdf)
 
 ==========
 
 ## 🚀 Run Locally
 
-This is a static website. Run it through a local web server so the page can load its HTML sections correctly.
+This static site loads page sections with JavaScript, so run it through a local web server rather than opening `index.html` directly.
 
-### 🖥️ Visual Studio Code
+### Visual Studio Code
 
-1. Open the project folder in Visual Studio Code.
-2. Open `index.html` with the **Live Server** extension.
+Open the project folder and choose **Go Live** while `index.html` is open.
 
-### 🐍 Python
+### Python
 
-From the project root, run:
+From the project root:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit <http://localhost:8000>.
+Then open <http://localhost:8000>.
 
 ==========
 
@@ -64,7 +82,7 @@ Then visit <http://localhost:8000>.
 ```text
 .
 ├── assets/
-│   ├── images/       # Profile photo, project screenshots, and favicon
+│   ├── images/       # Profile image, project previews, and favicon
 │   ├── resume.html   # Printable resume source
 │   └── *.pdf         # Downloadable resume
 ├── css/              # Base, layout, component, and animation styles
@@ -76,23 +94,7 @@ Then visit <http://localhost:8000>.
 
 ==========
 
-## 🗂️ Featured Projects
-
-- **IT Alliance Hub** — Figma mobile prototype for BSIT Alliance announcements, events, and programming resources ([view prototype](https://www.figma.com/design/KcZsWgjLrHU4pstAIClKdy/Mobile-IT-ALLIANCE-HUB?node-id=0-1&t=xmDZg9OWq2ieqdwp-1)).
-- **Tax Computational Tool** — Web app for estimating and comparing individual tax computations, with saved history and export features.
-- **Generation 1 Pokedex** — Full-stack Pokédex for exploring and collecting the original 151 Pokémon.
-- **EduRoom** — Flask-based room scheduling and reservation system.
-- **MochiVerse** — Browser-based mochi storefront demo with product customization and sample orders.
-- **Programming Projects** — Collection of programming assignments and practice projects in C, C#/.NET, and COBOL.
-
-More projects and source code are available on [GitHub](https://github.com/AlaizaNicoleCaranto).
-
-==========
-
 ## 📬 Contact
 
 - **Email:** [azialanicole09@gmail.com](mailto:azialanicole09@gmail.com)
 - **GitHub:** [github.com/AlaizaNicoleCaranto](https://github.com/AlaizaNicoleCaranto)
-- **Vercel:** [vercel.com/alaizanicolecarantos-projects](https://vercel.com/alaizanicolecarantos-projects)
-
-==========
