@@ -1,0 +1,333 @@
+<!-- =============================================
+     projects.html
+     Featured projects + filterable grid + GitHub CTA
+     ============================================= -->
+
+<section id="projects" class="section-pad">
+    <div class="container">
+
+        <!-- Section heading -->
+        <div class="section-header reveal">
+            <p class="section-tag">
+                <span class="tag-num">04.</span> Projects
+            </p>
+            <h2 class="section-title">
+                Featured <span class="accent">Work</span>
+            </h2>
+            <p class="section-subtitle">
+                Selected projects from my BSIT journey (1st–3rd year) —
+                covering web development, algorithms, and software engineering.
+            </p>
+        </div>
+
+        <!-- =============================================
+         FEATURED PROJECTS (top 2)
+         ============================================= -->
+        <div class="featured-projects">
+
+            <!-- Featured #1: Tax Computational Tool -->
+            <article class="featured-card reveal">
+                <div class="row g-0 align-items-center">
+
+                    <div class="col-md-6 featured-img-wrap">
+                        <img src="assets/images/tax-tool.png" alt="Tax Computational Tool screenshot"
+                            class="featured-img" loading="lazy" decoding="async" />
+                    </div>
+
+                    <div class="col-md-6 featured-info">
+                        <p class="featured-tag">Featured Project</p>
+                        <h3 class="featured-title">Tax Computational Tool</h3>
+
+                        <p class="featured-desc">
+                            A web-based tax computation system that automatically calculates
+                            graduated income tax, OSD, percentage tax, and the optional 8%
+                            income tax rate. Built with a clean dashboard for saving and
+                            reviewing computations.
+                        </p>
+
+                        <ul class="featured-features">
+                            <li>Automatic tax computation (Graduated, OSD, 8%)</li>
+                            <li>Save &amp; review computation history</li>
+                            <li>Clean, accountant-friendly interface</li>
+                        </ul>
+
+                        <div class="featured-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>SQLAlchemy</span>
+                            <span>SQLite</span>
+                            <span>PostgreSQL</span>
+                        </div>
+
+                        <div class="featured-links">
+                            <a href="https://github.com/AlaizaNicoleCaranto/tax-computational-tool" target="_blank"
+                                rel="noopener" class="btn btn-sm btn-primary-custom">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- Featured #2: Generation 1 Pokedex -->
+            <article class="featured-card reveal">
+                <div class="row g-0 align-items-center flex-md-row-reverse">
+
+                    <div class="col-md-6 featured-img-wrap">
+                        <img src="assets/images/pokedex.png" alt="Generation 1 Pokedex screenshot"
+                            class="featured-img" loading="lazy" decoding="async" />
+                    </div>
+
+                    <div class="col-md-6 featured-info">
+                        <p class="featured-tag">Featured Project</p>
+                        <h3 class="featured-title">Generation 1 Pokedex</h3>
+
+                        <p class="featured-desc">
+                            An interactive web-based Pokedex that lets users explore all 151
+                            original Kanto Pokémon. Built with a retro, game-inspired
+                            interface featuring pixel art and a welcome screen reminiscent
+                            of the classic Game Boy era.
+                        </p>
+
+                        <ul class="featured-features">
+                            <li>All 151 Kanto Pokémon with details</li>
+                            <li>Retro pixel-art welcome screen</li>
+                            <li>Game-inspired UI &amp; typography</li>
+                        </ul>
+
+                        <div class="featured-tech">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>React</span>
+                            <span>Vite</span>
+                            <span>Tailwind CSS</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <div class="featured-links">
+                            <a href="https://github.com/AlaizaNicoleCaranto/Generation1Pokedex" target="_blank"
+                                rel="noopener" class="btn btn-sm btn-primary-custom">
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+        </div>
+
+        <!-- =============================================
+         OTHER PROJECTS (filterable project grid + CTA)
+         ============================================= -->
+        <h3 class="grid-heading reveal">
+            Other Noteworthy Projects
+        </h3>
+
+        <div class="project-filters reveal" role="group" aria-label="Filter projects by category">
+            <button class="project-filter active" type="button" data-project-filter="all" aria-pressed="true">
+                All projects
+            </button>
+            <button class="project-filter" type="button" data-project-filter="design" aria-pressed="false">
+                UI/UX design
+            </button>
+            <button class="project-filter" type="button" data-project-filter="web" aria-pressed="false">
+                Web apps
+            </button>
+            <button class="project-filter" type="button" data-project-filter="programming" aria-pressed="false">
+                Programming
+            </button>
+            <span class="project-filter-status" aria-live="polite">Showing all projects</span>
+        </div>
+
+        <div class="row g-4 projects-grid">
+
+            <!-- Card: IT Alliance Hub mobile prototype -->
+            <div class="col-md-6 col-lg-4 reveal project-filter-item" data-project-category="design">
+                <article class="project-card project-card-figma">
+                    <div class="project-card-img">
+                        <img src="assets/images/it-alliance-hub.png" alt="IT Alliance Hub mobile app prototype designed in Figma"
+                            loading="lazy" decoding="async" />
+                    </div>
+                    <div class="project-card-body">
+                        <h4 class="project-card-title">IT Alliance Hub</h4>
+                        <p class="project-card-desc">
+                            A mobile prototype for the BSIT Alliance, bringing organization announcements,
+                            events, and programming learning resources into one hub.
+                        </p>
+                        <div class="project-card-tech">
+                            <span>Figma</span><span>Mobile Prototype</span><span>UI/UX</span>
+                        </div>
+                        <a href="https://www.figma.com/design/KcZsWgjLrHU4pstAIClKdy/Mobile-IT-ALLIANCE-HUB?node-id=0-1&amp;t=xmDZg9OWq2ieqdwp-1"
+                            target="_blank" rel="noopener noreferrer" class="project-card-link">
+                            View Figma Prototype &rarr;
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card: EduRoom -->
+            <div class="col-md-6 col-lg-4 reveal project-filter-item" data-project-category="web">
+                <article class="project-card">
+                    <div class="project-card-img">
+                        <img src="assets/images/eduroom.png" alt="EduRoom room-management dashboard"
+                            loading="lazy" decoding="async" />
+                    </div>
+                    <div class="project-card-body">
+                        <h4 class="project-card-title">EduRoom</h4>
+                        <p class="project-card-desc">
+                            Student-focused room management system — track class schedules,
+                            view available rooms, and submit room requests from one dashboard.
+                        </p>
+                        <div class="project-card-tech">
+                            <span>Python</span><span>Flask</span>
+                            <span>HTML</span><span>CSS</span>
+                        </div>
+                        <a href="https://github.com/AlaizaNicoleCaranto/EduRoom" target="_blank" rel="noopener"
+                            class="project-card-link">
+                            View Repo &rarr;
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card: MochiVerse -->
+            <div class="col-md-6 col-lg-4 reveal project-filter-item" data-project-category="web">
+                <article class="project-card">
+                    <div class="project-card-img">
+                        <img src="assets/images/mochiverse.png" alt="MochiVerse mochi-shop interface"
+                            loading="lazy" decoding="async" />
+                    </div>
+                    <div class="project-card-body">
+                        <h4 class="project-card-title">MochiVerse</h4>
+                        <p class="project-card-desc">
+                            Pastel-themed e-commerce app for a mochi shop — product listings,
+                            cart, customization, and order history.
+                        </p>
+                        <div class="project-card-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            <span>SQL.js</span><span>SQLite</span><span>Bootstrap</span>
+                        </div>
+                        <a href="https://github.com/AlaizaNicoleCaranto/MochiVerse" target="_blank" rel="noopener"
+                            class="project-card-link">
+                            View Repo &rarr;
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card: Project Pokemon (CLI) -->
+            <div class="col-md-6 col-lg-4 reveal project-filter-item" data-project-category="programming">
+                <article class="project-card">
+                    <div class="project-card-img">
+                        <img src="assets/images/pokemon-cli.png" alt="Project Pokemon terminal interface"
+                            loading="lazy" decoding="async" />
+                    </div>
+                    <div class="project-card-body">
+                        <h4 class="project-card-title">Project Pokemon</h4>
+                        <p class="project-card-desc">
+                            CLI-based Pokémon management system — manage a Pokemon list,
+                            build your team, navigate via terminal menu.
+                        </p>
+                        <div class="project-card-tech">
+                            <span>C</span><span>CLI</span>
+                        </div>
+                        <a href="https://github.com/AlaizaNicoleCaranto/ProjectPokemon" target="_blank" rel="noopener"
+                            class="project-card-link">
+                            View Repo &rarr;
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card: CPU Scheduling Simulator -->
+            <div class="col-md-6 col-lg-4 reveal project-filter-item" data-project-category="programming">
+                <article class="project-card">
+                    <div class="project-card-img">
+                        <img src="assets/images/cpu-sched.png" alt="CPU Scheduling Simulator output"
+                            loading="lazy" decoding="async" />
+                    </div>
+                    <div class="project-card-body">
+                        <h4 class="project-card-title">CPU Scheduling Simulator</h4>
+                        <p class="project-card-desc">
+                            Terminal simulator implementing classic CPU scheduling
+                            algorithms: FCFS, SJF, Priority, and Round Robin.
+                        </p>
+                        <div class="project-card-tech">
+                            <span>C</span><span>Algorithms</span>
+                        </div>
+                        <a href="https://github.com/AlaizaNicoleCaranto/cpuScheduling" target="_blank" rel="noopener"
+                            class="project-card-link">
+                            View Repo &rarr;
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card: ProgrammingProjects (terminal-style, no image) -->
+            <div class="col-md-6 col-lg-4 reveal project-filter-item" data-project-category="programming">
+                <article class="project-card project-card-terminal">
+
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">ProgrammingProjects/</span>
+                    </div>
+
+                    <div class="terminal-body">
+                        <pre class="terminal-tree">📁 ProgrammingProjects/
+├── 🏧 ATM
+├── ☕ CoffeeMenuApi
+├── 📇 DynamicStudentDirectory
+├── 📂 FileOpeningLab
+├── ➗ OPERATORS
+├── 🐾 ProjectPokemon
+├── 📊 StudentData
+├── 📈 StudentPerformanceAnalyzer
+├── 📝 StudentReport
+├── 🧮 cob
+├── 🗂️ dataModel
+├── 🎓 studentRecord
+└── 🔢 transformDigit<span class="cursor-blink">▊</span></pre>
+                    </div>
+
+                    <div class="project-card-body">
+                        <h4 class="project-card-title">Programming Projects</h4>
+                        <p class="project-card-desc">
+                            A compilation of 13+ minor programming projects covering CLI apps,
+                            OOP exercises, and data structures.
+                        </p>
+                        <div class="project-card-tech">
+                            <span>C</span><span>C#</span><span>COBOL</span>
+                            <span>.NET</span>
+                        </div>
+                        <a href="https://github.com/AlaizaNicoleCaranto/ProgrammingProjects" target="_blank"
+                            rel="noopener" class="project-card-link">
+                            View Repo &rarr;
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card: GitHub CTA (no project, just link to profile) -->
+            <div class="col-md-6 col-lg-4 reveal">
+                <a href="https://github.com/AlaizaNicoleCaranto" target="_blank" rel="noopener"
+                    class="project-card project-card-cta">
+                    <div class="cta-content">
+                        <i class="devicon-github-original cta-icon"></i>
+                        <h4>See More on GitHub</h4>
+                        <p>Explore all my repositories and ongoing projects.</p>
+                        <span class="cta-arrow">&rarr;</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>

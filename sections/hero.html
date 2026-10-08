@@ -1,0 +1,100 @@
+<!-- =============================================
+     hero.html
+     First impression: name, role, photo, socials
+     ============================================= -->
+
+<section id="home" class="hero-section">
+
+    <!-- Ambient background elements (decorative only) -->
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="row align-items-center min-vh-100 gy-5">
+
+            <!-- Left: Text content -->
+            <div class="col-lg-7 hero-text">
+
+                <p class="hero-greeting reveal">
+                    <span class="hero-prompt"> </span> Hello, I'm
+                </p>
+
+                <h1 class="hero-name reveal">
+                    Alaiza Nicole <span class="accent">Caranto</span>
+                </h1>
+
+                <h2 class="hero-role reveal">
+                    <span class="typed-role" id="typedRole"></span><span class="cursor-blink">|</span>
+                </h2>
+
+                <p class="hero-desc reveal">
+                    Aspiring Web Developer &amp; Network Administrator. I build clean,
+                    functional web apps and explore the world of networking.
+                    Currently serving as President of the BSIT Alliance.
+                </p>
+
+                <div class="hero-buttons reveal">
+                    <a href="#projects" class="btn btn-primary-custom">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline-custom">
+                        Get In Touch
+                    </a>
+                </div>
+
+                <!-- Social links -->
+                <div class="hero-socials reveal">
+                    <a href="https://github.com/AlaizaNicoleCaranto" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="devicon-github-original"></i>
+                    </a>
+                    <a href="https://vercel.com/alaizanicolecarantos-projects" target="_blank" rel="noopener"
+                        aria-label="Vercel">
+                        <i class="devicon-vercel-original"></i>
+                    </a>
+                    <a href="https://www.facebook.com/alaiza.nicole.caranto.2025" target="_blank" rel="noopener"
+                        aria-label="Facebook">
+                        <i class="devicon-facebook-plain"></i>
+                    </a>
+                    <a class="hero-email-link" href="mailto:azialanicole09@gmail.com?subject=Portfolio%20inquiry"
+                        aria-label="Email Alaiza">
+                        <!-- Inline SVG keeps the email icon lightweight and dependency-free. -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                        </svg>
+                        <span>Email me</span>
+                    </a>
+                </div>
+                <p class="email-feedback" id="emailFeedback" role="status" aria-live="polite"></p>
+
+            </div>
+
+            <!-- Right: Profile photo with techy frame -->
+            <div class="col-lg-5 hero-image-wrap reveal">
+                <div class="hero-image-frame">
+                    <div class="hero-image-corner tl"></div>
+                    <div class="hero-image-corner tr"></div>
+                    <div class="hero-image-corner bl"></div>
+                    <div class="hero-image-corner br"></div>
+
+                    <img src="assets/images/profile.jpg" alt="Alaiza Nicole Caranto" class="hero-image" />
+                </div>
+
+                <!-- Small floating badge under the photo -->
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+        <span class="scroll-mouse"></span>
+        <span class="scroll-text">scroll</span>
+    </a>
+
+</section>

@@ -1,0 +1,42 @@
+<!-- =============================================
+     navbar.html
+     Fixed top navigation with mobile burger menu
+     ============================================= -->
+
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNavbar">
+    <div class="container">
+
+        <!-- Brand / logo -->
+        <a class="navbar-brand brand-logo" href="#home">
+            <span class="brand-bracket">&lt;</span>ANC<span class="brand-bracket">/&gt;</span>
+        </a>
+
+        <!-- Burger toggle (mobile only) -->
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+            aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-line"></span>
+            <span class="toggler-line"></span>
+            <span class="toggler-line"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tech">Tech Stack</a></li>
+                <li class="nav-item"><a class="nav-link" href="#network-lab">Network Lab</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+                <!-- Download the ATS-friendly resume PDF. -->
+                <li class="nav-item ms-lg-3">
+                    <a class="btn btn-resume" href="assets/Alaiza-Nicole-Caranto-Resume.pdf" download>
+                        Download Resume
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>

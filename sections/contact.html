@@ -1,0 +1,112 @@
+<!-- =============================================
+     contact.html
+     Contact info + form (form is UI only for now)
+     ============================================= -->
+
+<section id="contact" class="section-pad">
+    <div class="container">
+
+        <!-- Section heading -->
+        <div class="section-header reveal">
+            <p class="section-tag">
+                <span class="tag-num">04.</span> Contact
+            </p>
+            <h2 class="section-title">
+                Let's work <span class="accent">together</span>
+            </h2>
+            <p class="section-subtitle">
+                Open to opportunities, collaborations, or just a good tech conversation.
+            </p>
+        </div>
+
+        <div class="row g-5">
+
+            <!-- LEFT: Contact details -->
+            <div class="col-lg-5 reveal">
+
+                <ul class="contact-list">
+                    <li>
+                        <span class="contact-label">Email</span>
+                        <div class="contact-email-row">
+                            <a href="mailto:azialanicole09@gmail.com">azialanicole09@gmail.com</a>
+                            <button class="copy-email-button" type="button" aria-label="Copy email address">
+                                Copy
+                            </button>
+                        </div>
+                        <span class="copy-email-status" id="copyEmailStatus" role="status" aria-live="polite"></span>
+                    </li>
+                    <li>
+                        <span class="contact-label">Phone</span>
+                        <a href="tel:+639477604994">0947 760 4994</a>
+                    </li>
+                    <li>
+                        <span class="contact-label">Location</span>
+                        <span>Laguna, Philippines</span>
+                    </li>
+                </ul>
+
+                <div class="local-time-card">
+                    <span class="local-time-indicator" aria-hidden="true"></span>
+                    <div>
+                        <span class="contact-label">Local time · Laguna, Philippines</span>
+                        <time id="localTime" class="local-time-value">Loading local time…</time>
+                    </div>
+                    <span class="local-time-zone" id="localTimeZone">PHT</span>
+                </div>
+
+                <!-- Social links -->
+                <div class="contact-socials">
+                    <a href="https://github.com/AlaizaNicoleCaranto" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="devicon-github-original"></i>
+                    </a>
+                    <a href="https://vercel.com/alaizanicolecarantos-projects" target="_blank" rel="noopener"
+                        aria-label="Vercel">
+                        <i class="devicon-vercel-original"></i>
+                    </a>
+                    <a href="https://www.facebook.com/alaiza.nicole.caranto.2025" target="_blank" rel="noopener"
+                        aria-label="Facebook">
+                        <i class="devicon-facebook-plain"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: Contact form -->
+            <div class="col-lg-7 reveal">
+
+                <form class="contact-form" id="contactForm" novalidate>
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <input type="text" class="form-control custom-input" placeholder="Your Name" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="email" class="form-control custom-input" placeholder="Your Email" required />
+                        </div>
+
+                        <div class="col-12">
+                            <input type="text" class="form-control custom-input" placeholder="Subject" required />
+                        </div>
+
+                        <div class="col-12">
+                            <textarea rows="5" class="form-control custom-input" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary-custom w-100">
+                                Send Message
+                            </button>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</section>

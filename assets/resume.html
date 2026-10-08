@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume of Alaiza Nicole Caranto, Web Developer and Network Administrator.">
+    <title>Alaiza Nicole Caranto - Resume</title>
+    <style>
+        :root {
+            color: #1b1b1b;
+            background: #f2f4f7;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.15;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: min(8.27in, calc(100% - 2rem));
+            margin: 2rem auto;
+            padding: 0.5in 0.7in;
+            background: #fff;
+            box-shadow: 0 12px 40px #15213a1a;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 18pt;
+            letter-spacing: 0.02em;
+            text-align: center;
+        }
+
+        .headline,
+        .contact {
+            text-align: center;
+        }
+
+        .headline {
+            margin: 0;
+            font-size: 10.5pt;
+            font-weight: 400;
+        }
+
+        .contact {
+            margin: 0;
+            font-size: 9.5pt;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        h2 {
+            margin: 8pt 0 3pt;
+            padding-bottom: 2pt;
+            border-bottom: 1px solid #444;
+            font-size: 11pt;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 10.5pt;
+        }
+
+        p {
+            margin: 0 0 3pt;
+        }
+
+        ul {
+            margin: 0 0 3pt 0.2in;
+            padding-left: 0.15in;
+        }
+
+        li {
+            margin: 0 0 2pt;
+        }
+
+        .entry {
+            break-inside: avoid;
+        }
+
+        .entry-heading {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 1.35in;
+            column-gap: 0.1in;
+            align-items: baseline;
+            line-height: 1.35;
+        }
+
+        .entry-year {
+            padding-right: 0.08in;
+            font-weight: 400;
+            font-style: italic;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .entry:not(:has(.entry-year)) h3 {
+            font-style: normal;
+        }
+
+        .entry-meta {
+            margin: 0 0 3pt;
+        }
+
+        .technologies {
+            font-size: 10pt;
+            font-style: italic;
+        }
+
+        .skills {
+            margin: 0 0 3pt;
+        }
+
+        a {
+            overflow-wrap: anywhere;
+        }
+
+        a.repo-link {
+            text-decoration: underline;
+            text-underline-offset: 1px;
+        }
+
+        @media print {
+            :root {
+                background: #fff;
+                font-size: 10.25pt;
+                line-height: 1.12;
+            }
+
+            body {
+                width: auto;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+
+            h1 {
+                font-size: 17.5pt;
+            }
+
+            .headline {
+                font-size: 10.25pt;
+            }
+
+            .contact {
+                font-size: 9.25pt;
+            }
+
+            h2 {
+                margin: 6pt 0 2.5pt;
+                padding-bottom: 1.5pt;
+                font-size: 10.5pt;
+            }
+
+            h3 {
+                font-size: 10.25pt;
+            }
+
+            p,
+            ul {
+                margin-bottom: 2.5pt;
+            }
+
+            li {
+                margin-bottom: 0;
+            }
+
+            .entry-heading {
+                line-height: 1.25;
+            }
+
+            .entry {
+                break-inside: avoid;
+            }
+
+            main {
+                margin-top: 10pt;
+            }
+
+            a.repo-link {
+                text-decoration: underline;
+            }
+
+            @page {
+                size: A4 portrait;
+                margin: 0.5in 0.7in;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 1.5rem 1.25rem;
+            }
+
+            .entry-heading {
+                grid-template-columns: minmax(0, 1fr) auto;
+            }
+
+            .entry-year {
+                padding-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ALAIZA NICOLE CARANTO</h1>
+        <p class="headline">Web Developer | Network Administrator</p>
+        <p class="contact">Laguna, Philippines | 09477604994 | <a
+                href="mailto:azialanicole09@gmail.com">azialanicole09@gmail.com</a></p>
+        <p class="contact"><a href="https://github.com/AlaizaNicoleCaranto">github.com/AlaizaNicoleCaranto</a> | <a
+                href="https://vercel.com/alaizanicolecarantos-projects">vercel.com/alaizanicolecarantos-projects</a></p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Professional Summary</h2>
+            <p>IT student passionate about Web Development and Network Administration, with hands-on experience in
+                full-stack development and basic networking (LAN setup, Cisco Packet Tracer). Familiar with JavaScript,
+                HTML, Python, C, and MySQL. Currently serving as President of the BSIT Alliance at the Polytechnic
+                University of the Philippines.</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <p class="skills"><strong>Languages:</strong> C, C#, COBOL, Python, Java, JavaScript, PHP, Visual Basic, SQL
+            </p>
+            <p class="skills"><strong>Frontend:</strong> HTML5, CSS3, Bootstrap, React, Vue, Blade |
+                <strong>Backend:</strong> Flask, Spring Boot, Laravel, ASP.NET, Tkinter, REST API</p>
+            <p class="skills"><strong>Databases:</strong> PostgreSQL, MySQL | <strong>Networking:</strong> Cisco Packet
+                Tracer, LAN Setup, IP Addressing</p>
+            <p class="skills"><strong>Tools:</strong> Git, Postman, Swagger, Thunder Client, Vercel, Figma</p>
+            <p class="skills"><strong>Additional Skills:</strong> Communication, teamwork, Microsoft Office (Word,
+                Excel, PowerPoint, Google Docs/Sheets), problem-solving, network troubleshooting, adaptability</p>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <article class="entry">
+                <div class="entry-heading">
+                    <h3>Tax Computational Tool</h3><span class="entry-year">2026</span>
+                </div>
+                <ul>
+                    <li class="technologies">Technologies: Python, Flask, HTML, CSS, JavaScript, SQLAlchemy, SQLite,
+                        PostgreSQL | Repository: <a
+                            class="repo-link"
+                            href="https://github.com/AlaizaNicoleCaranto/tax-computational-tool">github.com/AlaizaNicoleCaranto/tax-computational-tool</a>
+                    </li>
+                    <li>Built a web-based tool to calculate graduated income tax, OSD, percentage tax, and the optional
+                        8&#37; rate, with a dashboard for saving and reviewing history.</li>
+                </ul>
+            </article>
+            <article class="entry">
+                <div class="entry-heading">
+                    <h3>Generation 1 Pokedex</h3><span class="entry-year">2026</span>
+                </div>
+                <ul>
+                    <li class="technologies">Technologies: Java, Spring Boot, React, Vite, Tailwind CSS, MySQL |
+                        Repository: <a class="repo-link"
+                            href="https://github.com/AlaizaNicoleCaranto/Generation1Pokedex">github.com/AlaizaNicoleCaranto/Generation1Pokedex</a>
+                    </li>
+                    <li>Built an interactive Pokedex for all 151 Kanto Pokémon with a pixel-art welcome screen and
+                        responsive, classic Game Boy-inspired interface.</li>
+                </ul>
+            </article>
+            <p><strong>More projects:</strong> <a
+                    href="https://github.com/AlaizaNicoleCaranto">github.com/AlaizaNicoleCaranto</a></p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <article class="entry">
+                <div class="entry-heading">
+                    <h3>BS in Information Technology</h3><span class="entry-year">2024–Present</span>
+                </div>
+                <p>Polytechnic University of the Philippines</p>
+            </article>
+            <article class="entry">
+                <div class="entry-heading">
+                    <h3>BS in Accounting Information System</h3><span class="entry-year">2023–2024</span>
+                </div>
+                <p>Catanduanes State University</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Leadership and Volunteer Experience</h2>
+            <article class="entry">
+                <div class="entry-heading">
+                    <h3>President, BSIT Alliance</h3>
+                    <span class="entry-year">A.Y. 2026–2027</span>
+                </div>
+                <p>Polytechnic University of the Philippines</p>
+                <ul>
+                    <li>Organized an ML tournament for the 17th Foundation Day and helped run the Balik Sinta booth for Balik Sinta 2026.</li>
+                    <li>Prepared financial reports for BSIT Alliance.</li>
+                </ul>
+            </article>
+            <article class="entry">
+                <div class="entry-heading">
+                    <h3>Volunteer Tutor, Lower-year Students</h3>
+                    <span class="entry-year">2025 – Present</span>
+                </div>
+                <p>Polytechnic University of the Philippines</p>
+                <ul>
+                    <li>Tutored lower-year BSIT students in programming fundamentals.</li>
+                    <li>Provided peer-learning and academic support.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <article class="entry">
+                <div class="entry-heading">
+                    <h3>Student Researcher | Polytechnic University of the Philippines</h3><span
+                        class="entry-year">2025–Present</span>
+                </div>
+                <ul>
+                    <li>Assisting a faculty-led research on "Epidemiological Profile and Rabies Post-Exposure
+                        Prophylaxis Compliance Among Animal Bite Victims in Calauan, Laguna (2023–2025)."</li>
+                    <li>Handled data gathering and encoding support.</li>
+                </ul>
+            </article>
+            <article class="entry">
+                <div class="entry-heading">
+                    <h3>Work Immersion — Encoder | Assessor's Office, Calauan, Laguna</h3><span class="entry-year">2023
+                        – 10 days</span>
+                </div>
+                <ul>
+                    <li>Processed and encoded tax declarations and land records.</li>
+                    <li>Gained hands-on experience with document processing and data management.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Seminars and Trainings</h2>
+            <article class="entry">
+                <h3>BSIT Summer Camp 2026: Empowering Students Through Web Development Skills</h3>
+                <p>Covered HTML (semantic), CSS, JavaScript, and Laravel.</p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

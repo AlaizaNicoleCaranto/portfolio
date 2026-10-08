@@ -1,0 +1,243 @@
+/* =============================================
+   animation.css
+   Keyframes and animation utility classes.
+   Layout belongs in the other stylesheets.
+   ============================================= */
+
+/* ---------------------------------------------
+   1. SCROLL REVEAL
+   Start hidden and slightly lowered.
+   The .revealed class restores the normal position.
+   --------------------------------------------- */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger transitions so elements appear one after another. */
+.reveal.delay-1 {
+    transition-delay: 0.08s;
+}
+
+.reveal.delay-2 {
+    transition-delay: 0.16s;
+}
+
+.reveal.delay-3 {
+    transition-delay: 0.24s;
+}
+
+.reveal.delay-4 {
+    transition-delay: 0.32s;
+}
+
+/* ---------------------------------------------
+   2. KEYFRAMES
+   Each animation supports a specific interface detail.
+   --------------------------------------------- */
+
+/* Move the loading indicator across its track. */
+@keyframes loaderSlide {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Pulse the availability indicator. */
+@keyframes pulseDot {
+    0% {
+        box-shadow: 0 0 0 0 #4ade80aa;
+    }
+
+    70% {
+        box-shadow: 0 0 0 8px #4ade8000;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 #4ade8000;
+    }
+}
+
+/* Move the small dot down the mouse-shaped scroll indicator. */
+@keyframes scrollWheel {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 0);
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+        transform: translate(-50%, 12px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, 0);
+    }
+}
+
+/* Blink the cursor beside the typed role and terminal tree. */
+@keyframes cursorBlink {
+
+    0%,
+    49% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Gently float decorative icons. */
+@keyframes floatIcon {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+/* Fade out the loading screen. */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/* ---------------------------------------------
+   3. ANIMATION UTILITY CLASSES
+   Reusable classes for small interface animations.
+   --------------------------------------------- */
+.cursor-blink {
+    display: inline-block;
+    color: var(--accent);
+    animation: cursorBlink 1s steps(1) infinite;
+    font-weight: 400;
+    margin-left: 2px;
+}
+
+.float-icon {
+    animation: floatIcon 3s ease-in-out infinite;
+}
+
+@keyframes ambientDrift {
+    from {
+        background-position: 0% 0%;
+        opacity: 0.72;
+    }
+
+    to {
+        background-position: 100% 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes titleAccentIn {
+    from {
+        transform: scaleX(0.35);
+        opacity: 0.45;
+    }
+
+    to {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes cardLiftIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes projectCardReveal {
+    from {
+        opacity: 0;
+        filter: blur(4px);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@keyframes projectImageReveal {
+    from {
+        clip-path: inset(0 0 100% 0);
+    }
+
+    to {
+        clip-path: inset(0);
+    }
+}
+
+@keyframes techMarquee {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* ---------------------------------------------
+   4. REDUCED MOTION
+   Respect the user's reduced-motion preference.
+   --------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+
+    .scroll-progress span {
+        will-change: auto;
+    }
+
+    body::before {
+        animation: none;
+    }
+}
