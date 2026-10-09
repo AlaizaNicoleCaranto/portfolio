@@ -213,6 +213,18 @@
     }
 }
 
+/* Add a restrained floating feel without interfering with hover transforms. */
+@keyframes techCardFloat {
+    0%,
+    100% {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: 0 -4px;
+    }
+}
+
 /* ---------------------------------------------
    4. REDUCED MOTION
    Respect the user's reduced-motion preference.

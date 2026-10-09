@@ -20,8 +20,10 @@ I am an Information Technology student at the Polytechnic University of the Phil
 
 ## ✨ Highlights
 
-- Responsive portfolio with animated, categorized technology logos
+- Responsive portfolio with animated, clickable technology cards and project links
 - Featured projects and filterable project cards
+- Project screenshot lightbox, expandable build notes, and technology maps
+- Shareable project links using the device share sheet or a clipboard fallback
 - Interactive Network Mini-Lab demonstrating an example packet route
 - Figma mobile prototype for the IT Alliance Hub
 - Downloadable, one-page resume
@@ -43,8 +45,8 @@ I am an Information Technology student at the Polytechnic University of the Phil
 ## 🗂️ Selected Projects
 
 - **IT Alliance Hub** — Figma mobile prototype for BSIT Alliance announcements, events, and programming resources. [View prototype](https://www.figma.com/design/KcZsWgjLrHU4pstAIClKdy/Mobile-IT-ALLIANCE-HUB?node-id=0-1&t=xmDZg9OWq2ieqdwp-1)
-- **Tax Computational Tool** — Web application for calculating tax options and reviewing saved computations.
-- **Generation 1 Pokedex** — Full-stack Pokédex for exploring the original 151 Kanto Pokémon.
+- **Tax Computational Tool** — Web application for calculating tax options and reviewing saved computations. [Live demo](https://tax-computational-tool.vercel.app/)
+- **Generation 1 Pokedex** — Full-stack Pokédex for exploring the original 151 Kanto Pokémon. [Live demo](https://generation1-pokedex.vercel.app/)
 - **EduRoom** — Flask-based room scheduling and reservation system.
 - **MochiVerse** — Browser-based mochi storefront prototype.
 - **Programming Projects** — Programming exercises and applications in C, C#/.NET, and COBOL.

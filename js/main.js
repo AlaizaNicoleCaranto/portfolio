@@ -11,7 +11,9 @@ document.addEventListener('sectionsLoaded', () => {
     initFooterYear();
     initContactForm();
     initProjectCardSpotlight();
+    initProjectSharing();
     initProjectFilters();
+    initProjectPreview();
     initNetworkLab();
     initLocalTime();
     initCopyEmailButton();
@@ -183,6 +185,58 @@ function initProjectCardSpotlight() {
     });
 }
 
+/* Share a direct portfolio link to a project, with clipboard support as a fallback. */
+function initProjectSharing() {
+    const cards = document.querySelectorAll('.featured-card[id], .project-card[id]:not(.project-card-cta)');
+
+    cards.forEach((card) => {
+        const title = card.querySelector('.featured-title, .project-card-title')?.textContent.trim();
+        const content = card.querySelector('.featured-info, .project-card-body');
+        if (!title || !content) return;
+
+        const shareRow = document.createElement('div');
+        shareRow.className = 'project-share';
+
+        const shareButton = document.createElement('button');
+        shareButton.type = 'button';
+        shareButton.className = 'project-share-button';
+        shareButton.textContent = 'Share project';
+        shareButton.setAttribute('aria-label', `Share ${title}`);
+
+        const status = document.createElement('span');
+        status.className = 'project-share-status';
+        status.setAttribute('role', 'status');
+        status.setAttribute('aria-live', 'polite');
+
+        shareButton.addEventListener('click', async () => {
+            const url = new URL(window.location.href);
+            url.hash = card.id;
+
+            try {
+                if (navigator.share) {
+                    await navigator.share({ title, text: `Explore ${title}`, url: url.href });
+                    status.textContent = 'Project link shared.';
+                    return;
+                }
+
+                if (!navigator.clipboard?.writeText) {
+                    status.textContent = `Copy this project link: ${url.href}`;
+                    return;
+                }
+
+                await navigator.clipboard.writeText(url.href);
+                status.textContent = 'Project link copied.';
+            } catch (error) {
+                if (error.name === 'AbortError') return;
+                status.textContent = `Copy this project link: ${url.href}`;
+            }
+        });
+
+        shareRow.append(shareButton, status);
+        content.appendChild(shareRow);
+    });
+}
+
 /* Filter the secondary project cards while keeping featured work in view. */
 function initProjectFilters() {
     const buttons = document.querySelectorAll('[data-project-filter]');
@@ -217,6 +271,55 @@ function initProjectFilters() {
                 ? `Showing all ${visibleCount} projects`
                 : `Showing ${visibleCount} ${categoryLabels[selectedCategory] || 'projects'}`;
         });
+    });
+}
+
+/* Open project screenshots in an accessible native dialog. */
+function initProjectPreview() {
+    const dialog = document.getElementById('projectPreviewDialog');
+    const closeButton = dialog?.querySelector('.project-preview-close');
+    const previewImage = dialog?.querySelector('.project-preview-image');
+    const previewTitle = dialog?.querySelector('#projectPreviewTitle');
+    const previewCaption = dialog?.querySelector('.project-preview-caption');
+    if (!dialog || !closeButton || !previewImage || !previewTitle || !previewCaption
+        || typeof dialog.showModal !== 'function') return;
+
+    document.querySelectorAll('.project-preview-trigger').forEach((trigger) => {
+        trigger.addEventListener('click', (event) => {
+            const image = trigger.querySelector('img');
+            const project = trigger.closest('.featured-card, .project-card');
+            const projectName = project?.querySelector('.featured-title, .project-card-title')?.textContent.trim();
+            const imageUrl = trigger.getAttribute('href');
+            if (!image || !projectName || !imageUrl) return;
+
+            event.preventDefault();
+            previewImage.src = imageUrl;
+            previewImage.alt = image.alt;
+            previewTitle.textContent = projectName;
+            previewCaption.textContent = `Full-size preview of ${projectName}.`;
+            dialog.showModal();
+        });
+    });
+
+    closeButton.addEventListener('click', () => dialog.close());
+
+    // Close explicitly on Escape for consistent keyboard behavior across browsers.
+    dialog.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            dialog.close();
+        }
+    });
+
+    // Clicking the backdrop closes the preview; clicks inside the panel do not.
+    dialog.addEventListener('click', (event) => {
+        if (event.target === dialog) dialog.close();
+    });
+
+    dialog.addEventListener('close', () => {
+        previewImage.removeAttribute('src');
+        previewImage.alt = '';
+        previewCaption.textContent = '';
     });
 }
 
